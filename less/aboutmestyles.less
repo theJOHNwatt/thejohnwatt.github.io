@@ -1,0 +1,123 @@
+header {
+    img {
+        width:100%;
+        box-shadow: @boxshadow;
+        border-radius: 0px;
+        padding-top: 70px;
+    }
+}
+
+
+.missionText {
+    margin-left: auto;
+    margin-right: auto;
+    background: @bg;
+    padding: 15px;
+    text-shadow:@fontshadow;
+    color:white;
+
+    .boxstyle(85%, @bg);
+    box-shadow:@boxshadow;
+    @media @tablet {
+        margin-top: -5px;
+        width: 100%;
+        
+        border-radius:0;
+    }
+    
+    h2 {
+        color:black;
+        color:@goldfont;
+        text-align: center;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        font-weight: inherit;
+        @media @tablet {
+            font-size: 1.2rem;
+        }
+        @media @mobile {
+            font-size: 1rem;
+        }
+    }
+}
+
+#testTitle {
+    text-align: center;
+    text-shadow: @fontshadow;
+    color: @goldfont;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    text-shadow: @fontshadow;
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+    p {
+        font-family: 'Alice', serif; 
+        padding: 0 20px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color:black;
+        @media @tablet {
+            font-size: 1.2rem;
+        }
+    }
+    span {
+        color:@goldfont;
+        font-size:1.5rem;
+        @media @tablet {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.meetTeam {
+
+    .teamFirst, .teamSecond {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    h2 {
+        text-align: center;
+        text-shadow: @fontshadow;
+        color: @goldfont;
+        margin-top: 50px;
+    }
+            #AnthonyV, #Kimberly, #Nicholas, #Jon, #Terry, #Anthony, #John{
+                .boxstyle(350px, @bg);
+                box-shadow: @boxshadow;
+                margin-top: 10px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        h4{
+            text-shadow:@fontshadow;
+            color:@goldfont;
+            margin-top:10px;
+        }
+        img {
+            margin-top: 10px;
+            box-shadow:  0px 0px 10px rgba(0,0,0, 0.5);
+            border-radius: 10px;
+        }
+        p a{
+            text-decoration: none;
+            color: @goldfont;
+        }
+}
+
+footer {
+    text-align: center;
+    font-family:'Alice', serif;
+    color: @goldfont;
+}

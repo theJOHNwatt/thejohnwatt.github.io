@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1000px) {
+  html {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Tangerine', cursive;
+  font-weight: bold;
+}
+h1,
+nav a {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+nav a {
+  font-family: 'Alice', serif;
+  font-weight: Bold;
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'Alice', serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: Bold;
+}
+h4 {
+  font-size: 1.7rem;
+}
+.navBar {
+  width: 100%;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: rgba(0, 163, 255, 0.8);
+  padding: 0 20px;
+  position: fixed;
+  align-content: space-between;
+  border: 1px solid rgba(0, 163, 255, 0.8);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.navBar nav a {
+  margin-left: 10px;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .navBar nav a {
+    font-size: 1rem;
+  }
+}
+.navBar img {
+  width: 100px;
+}
+.navBar h1 {
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .navBar h1 {
+    font-size: 2rem;
+  }
+}
+header img {
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  padding-top: 70px;
+}
+.missionText {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  margin: 50px auto;
+  background: rgba(0, 163, 255, 0.8);
+  padding: 15px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1000px) {
+  .missionText {
+    margin-top: -5px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+.missionText h2 {
+  color: black;
+  color: #F1C40E;
+  text-align: center;
+}
+.missionText p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: inherit;
+}
+@media (max-width: 1000px) {
+  .missionText p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .missionText p {
+    font-size: 1rem;
+  }
+}
+#testTitle {
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  color: #F1C40E;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1000px) {
+  .testimonials {
+    flex-wrap: wrap;
+  }
+}
+.testimonials p {
+  font-family: 'Alice', serif;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: black;
+}
+@media (max-width: 1000px) {
+  .testimonials p {
+    font-size: 1.2rem;
+  }
+}
+.testimonials span {
+  color: #F1C40E;
+  font-size: 1.5rem;
+}
+@media (max-width: 1000px) {
+  .testimonials span {
+    font-size: 1.2rem;
+  }
+}
+.meetTeam .teamFirst,
+.meetTeam .teamSecond {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.meetTeam h2 {
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  color: #F1C40E;
+  margin-top: 50px;
+}
+.meetTeam #AnthonyV,
+.meetTeam #Kimberly,
+.meetTeam #Nicholas,
+.meetTeam #Jon,
+.meetTeam #Terry,
+.meetTeam #Anthony,
+.meetTeam #John {
+  width: 350px;
+  margin: 50px auto;
+  background: rgba(0, 163, 255, 0.8);
+  padding: 15px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meetTeam h4 {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  color: #F1C40E;
+  margin-top: 10px;
+}
+.meetTeam img {
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.meetTeam p a {
+  text-decoration: none;
+  color: #F1C40E;
+}
+footer {
+  text-align: center;
+  font-family: 'Alice', serif;
+  color: #F1C40E;
+}
